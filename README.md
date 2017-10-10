@@ -66,6 +66,7 @@ DCEX: https://www.dc-ex.com/exchange/index/BTC_SIGT<br />
 
 Signatum Roadmap v1.0
 ---------------------
+
 1. Project dedicated explorer ( to be released as OpenSource under GPL ) - completed 24th July 2017
 2. Whitepaper - task assigned to community members - completed 2nd August 2017
 3. Update Website - completed 2nd August 2017
@@ -82,7 +83,7 @@ Note: Further suggestions will need community support to be included in version 
 
 
 Development Process
-===================
+-------------------
 
 Developers work in their own trees, then submit pull requests when
 they think their feature or bug fix is ready.
