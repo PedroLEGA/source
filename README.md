@@ -5,6 +5,7 @@ SIGNATUM
 
 Website: http://signatum.io<br />
 Marketplace: http://signatum.store<br />
+Discord: https://discord.gg/eWPqGGs<br />
 
 Team
 -----
@@ -17,12 +18,22 @@ Explorers
 
 Official 1: http://explorer.signatum.download<br />
 Official 2: http://explorer.signatum.io<br /> 
-Project Developed Official: http://internal.signatum.io<br />
+Official 3: http://internal.signatum.io<br />
 Difficulty Chart: http://charts.signatum.io<br />
+
+
+Community Links
+---------------
+
+News: http://signatum.news
 
 
 Tor Links
 ---------
+
+Tor Website: http://g6k4irnlnl57lusa.onion<br />
+Tor Explorer: http://j7hjasnnxyjcjolf.onion<br />
+Tor Marketplace: http://signatumllrf6vg6.onion<br />
 
 Node: addnode=tl3bna25hbr5r2eg.onion<br />
 Node: addnode=ab7vmf6j2rajwo33.onion<br />
@@ -35,10 +46,7 @@ Node: addnode=a4scscaet5aplljx.onion<br />
 Community Tor Links
 -------------------
 
-Node: addnode-w3rimjo7drskmbbd.onion<br /> 
-Tor Website: http://g6k4irnlnl57lusa.onion<br />
-Tor Explorer: http://j7hjasnnxyjcjolf.onion<br />
-Tor Marketplace: http://signatumllrf6vg6.onion<br />
+Node: addnode=w3rimjo7drskmbbd.onion<br /> 
 
 
 Paper Wallet
@@ -74,7 +82,7 @@ Note: Further suggestions will need community support to be included in version 
 
 
 Development Process
-===========================
+===================
 
 Developers work in their own trees, then submit pull requests when
 they think their feature or bug fix is ready.
