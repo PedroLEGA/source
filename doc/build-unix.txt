@@ -14,7 +14,6 @@ UNIX BUILD NOTES
 To Build
 --------
 
-cd src/
 cd src/leveldb
 chmod +x build_detect_platform
 make clean && make libleveldb.a libmemenv.a

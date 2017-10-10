@@ -12,59 +12,75 @@ Find out the IP address of your Pi by logging into your home DSL/Fiber device. I
 
 From now on, just paste the following commands to your raspberry
 
-sudo passwd (set up sudo access. its self explanatory)
+# setup sudo access if required
+sudo passwd 
+
+# update packages
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install build-essential libssl-dev libdb++-dev libdb-dev libboost-all-dev libqrencode-dev libminiupnpc-dev nano git
-sudo git clone https://github.com/signatumd/source.git
-cd source/src/leveldb/
+
+# install dependencies
+sudo apt-get install build-essential libssl-dev libdb++-dev libdb-dev libboost-all-dev libqrencode-dev libminiupnpc-dev git
+
+# clone signatum github
+sudo git clone https://github.com/signatumd/source.git signatum
+
+# build leveldb
+cd ~/signatum/src/leveldb/
 sudo chmod +x build_detect_platform
 sudo make libleveldb.a libmemenv.a
-cd .. .. ( its two times .. with a space )
-sudo make -f makefile.unix -j2 ( this will build the wallet / daemon for your Pi. Patience there ...)
+
+# builds wallet and daemon for pi
+cd ~/signatum/src/
+sudo make -f makefile.unix -j2 
+
+# reduce binary size
 sudo strip signatumd
-sudo mv signatumd /usr/bin
-signatumd ( run it once and wait for it to give you a config missing error )
-cd ( enter )
-cd .signatumd ( enter )
-wget https://raw.githubusercontent.com/signatumd/releases/master/signatum.conf ( enter )
-cd ( enter )
-signatumd ( enter )
 
-^ this runs the wallet or the daemon. You can check the sync progress by issuing:
+# copy daemon binary for system wide access (optional)
+sudo mv signatumd /usr/bin/signatumd
 
+# run it once and wait for it to give you a config missing error
+signatumd 
+
+# copy conf template (note: staking has already been enabled)
+cd ~/.signatum
+wget https://raw.githubusercontent.com/signatumd/releases/master/signatum.conf
+#####################################################
+# WARNING CHANGE RPC PASSWORD IN signatum.conf FILE
+#####################################################
+
+# run the wallet or the daemon. You can check the sync progress by issuing:
+signatumd 
+
+# check debug
 tail -f .signatumd/debug.log ( press Ctrl+C to cancel )
 
-Get a wallet address
+# get a wallet address
+signatumd getnewaddress
 
-signatumd getnewaddress ( enter )
+# copy that address and send 1 SIGT as a test. 
+# Wait for a block confirmation and it should show up after you run:
+signatumd getbalance
 
-Copy that address and send 1 SIGT as a test. Wait for a block confirmation and it should show up after you do a :
+# to check status and connections
+signatumd getinfo
 
-signatumd getbalance ( enter )
+# to checki wallet staking
+signatumd getstakinginfo
+# make sure it says "enabled: true" and "staking: true"
 
-To enable staking on your Pi device, edit signatum.conf file located in .signatum folder.
 
-sudo nano .signatum/signatum.conf ( enter )
-
-add line "staking=1" ( Press Ctrl + X to exit while saving "
-
-signatumd stop (enter)
-signatumd (enter)
-signatumd getinfo ( enter )
-
-Make sure it says "staking: true:
-
-If you wish to take backup of your staking wallet or copy over your current desktop wallet, use WinSCP or Filezilla client.
-Be sure to specy IP, user and password in the file transfer client. Protocol should be SCP and port 22. For Filezilla,
-user the following :
+# If you wish to take backup of your staking wallet or copy over your 
+# current desktop wallet, use WinSCP or Filezilla client.
+# Be sure to specify IP, user and password in the file transfer client. 
+# Protocol should be SCP and port 22. 
+# For Filezilla, use the following :
 
 host: sftp://pi-ipaddress user: pi password:your-password port:22
 
-Jump to .signatum folder and copy the wallet.dat or place your wallet backup there in that folder. ( Important: Make sure 
-signatumd stop) is done before you do this.
+# Jump to .signatum folder and copy the wallet.dat 
+# or place your wallet backup there in that folder. 
+# ( Important: Make sure you run 'signatumd stop' before you modify conf/wallet files
 
-Thats pretty much it. Ask me for tips on Discord or Telegram on how to stake SIGT on your PI.
-
--The Doctor
-
+# thats pretty much it. ask devs for tips on Discord or Telegram on how to stake SIGT on your PI.
