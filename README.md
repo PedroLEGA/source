@@ -3,8 +3,8 @@
 SIGNATUM
 ========
 
-Website: http://signatum.io
-Marketplace: http://signatum.store
+Website: http://signatum.io<br />
+Marketplace: http://signatum.store<br />
 
 Team
 -----
@@ -15,45 +15,45 @@ Skankhunt42, The Doctor, Cryptovore, Kahir, SonnyDaytona, Eikcam, Kasper, Squbs,
 Explorers
 ---------
 
-Official 1: http://explorer.signatum.download
-Official 2: http://explorer.signatum.io 
-Project Developed Official: http://internal.signatum.io
-Difficulty Chart: http://charts.signatum.io
+Official 1: http://explorer.signatum.download<br />
+Official 2: http://explorer.signatum.io<br /> 
+Project Developed Official: http://internal.signatum.io<br />
+Difficulty Chart: http://charts.signatum.io<br />
 
 
 Tor Links
 ---------
 
-Node: addnode=tl3bna25hbr5r2eg.onion
-Node: addnode=ab7vmf6j2rajwo33.onion
-Node: addnode=z6guowp3wn3fnekm.onion
-Node: addnode=6jsbbxzfd5wyhs5i.onion
-Node: addnode=6fzxqhdvvevev75v.onion
-Node: addnode=a4scscaet5aplljx.onion
+Node: addnode=tl3bna25hbr5r2eg.onion<br />
+Node: addnode=ab7vmf6j2rajwo33.onion<br />
+Node: addnode=z6guowp3wn3fnekm.onion<br />
+Node: addnode=6jsbbxzfd5wyhs5i.onion<br />
+Node: addnode=6fzxqhdvvevev75v.onion<br />
+Node: addnode=a4scscaet5aplljx.onion<br />
 
 
 Community Tor Links
 -------------------
 
-Node: addnode-w3rimjo7drskmbbd.onion 
-Tor Website: http://g6k4irnlnl57lusa.onion
-Tor Explorer: http://j7hjasnnxyjcjolf.onion
-Tor Marketplace: http://signatumllrf6vg6.onion
+Node: addnode-w3rimjo7drskmbbd.onion<br /> 
+Tor Website: http://g6k4irnlnl57lusa.onion<br />
+Tor Explorer: http://j7hjasnnxyjcjolf.onion<br />
+Tor Marketplace: http://signatumllrf6vg6.onion<br />
 
 
 Paper Wallet
 ------------
 
-http://paperwallet.signatum.io
-http://paperwallet.signatum.download
+http://paperwallet.signatum.io<br />
+http://paperwallet.signatum.download<br />
 
 
 Exchange
 --------
 
-Yobit: https://yobit.net/en/trade/SIGT/BTC
-Nova: https://novaexchange.com/market/BTC_SIGT
-DCEX: https://www.dc-ex.com/exchange/index/BTC_SIGT
+Yobit: https://yobit.net/en/trade/SIGT/BTC<br />
+Nova: https://novaexchange.com/market/BTC_SIGT<br />
+DCEX: https://www.dc-ex.com/exchange/index/BTC_SIGT<br />
 
 
 Signatum Roadmap v1.0
